@@ -1,0 +1,8 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+<% 1.upto(100) do |i| %>
+  city_<%= i %>:
+    id: <%= i %>
+    name: City<%= i %>
+    state: CA
+<% end %>

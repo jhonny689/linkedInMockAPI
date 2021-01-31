@@ -1,0 +1,8 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+<% 1.upto(100) do |i| %>
+  company_<%= i %>:
+    id: <%= i %>
+    name: <%= "user#{i}" %>
+    city_id: <%= rand(1..100) %>
+<% end %>

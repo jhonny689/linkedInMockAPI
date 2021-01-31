@@ -1,0 +1,41 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+# Get People
+GET http://127.0.0.1:3000/api/v1/people
+Accept: application/json
+
+###
+
+# Get People
+GET http://127.0.0.1:3000/api/v1/people/1
+Accept: application/json
+
+###
+
+# Get Companines
+GET http://127.0.0.1:3000/api/v1/companies
+Accept: application/json
+
+###
+
+# Get Companines
+GET http://127.0.0.1:3000/api/v1/companies/19
+Accept: application/json
+
+###
+
+PUT http://127.0.0.1:3000/api/v1/people/1/companies/19
+Content-Type: application/json
+
+{
+  "company_person": {
+    "start_date": "2020-06-01"
+  }
+}
+
+###
