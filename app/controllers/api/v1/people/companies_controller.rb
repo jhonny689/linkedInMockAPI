@@ -7,7 +7,7 @@ class Api::V1::People::CompaniesController < Api::V1::People::BaseController
 
     start_date = company_person_params[:start_date].to_date
 
-    if @new_company.save
+    if @new_company.save && @company_person
       @company_person.update(end_date: start_date - 1.day)
     end
 
